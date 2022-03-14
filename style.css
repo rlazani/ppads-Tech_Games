@@ -44,6 +44,8 @@ body {
     height: 350px;
   }
 
+  
+
   .center {
     text-align: center;
   }
@@ -72,7 +74,9 @@ body {
     margin-top: 2%;
   }
   
-  
+  .cadastroInicial {
+    margin: 2% 2% 2% 33%;
+  }
  
 
   /* Footer */
@@ -95,5 +99,46 @@ body {
     color: #8aacc8;
     font-weight: bold;
   }
+
+
+
+  /* LOGADO */
+
+  .primeiroQuadroLogado {
+    padding: 10% 10% 10% 10%;
+    background-color: #9bcbf8;
+  }
+
+  .perguntaLogado {
+    margin-left: 21%;
+    color: black;
+    font-size: 2.5rem;
+  }
+
+  .opcao {
+    padding: 1% 1%;
+  }
+
+  .opcao h3 {
+    border: black solid 1px;
+    width: 70%;
+    padding: 5% 5%;
+    text-align: center;
+    color: black;
+  }
+
+  .opcaoUm, .opcaoTres {
+    padding: 1% 1%;
+    margin-left: 10%;
+  }
+
+  .opcaoUm h3, .opcaoTres h3 {
+    border: black solid 1px;
+    width: 70%;
+    padding: 5% 5%;
+    text-align: center;
+    color: black;
+  }
   
+
   
