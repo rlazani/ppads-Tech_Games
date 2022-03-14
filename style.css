@@ -1,0 +1,99 @@
+
+/* Cores 
+
+#005005 verde escuro h1
+#003300 verde escuro p
+
+#388e3c verde menu
+
+*/
+
+/* Menu */
+
+body {
+    background-color: #eff1f1;
+  }
+
+  
+  
+  h2, h3, h4 {
+    color: #8aacc8;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 500;
+  }
+  
+  p {
+    color: #000;
+    font-family: 'Roboto' sans-serif;
+    font-size: 16px;
+  }
+  
+  
+  
+  .inicio {
+    margin-left: 40%;
+    margin-top: 1%;
+    height: 70px;
+  }
+  
+  /* Primeiro Quadro */
+  
+  .primeiroQuadro {
+    padding: 10% 20% 20% 20%;
+    background-color: #9bcbf8;
+    height: 350px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .cadastrar {
+    text-align: center;
+    margin-top: 1%;
+  }
+
+ 
+  
+  .primeiroQuadro h1 {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: black 2px 2px;
+    margin-top: 1%;
+    margin-bottom: 7%;
+    font-weight: 600;
+    letter-spacing: 9px;
+  }
+  
+  .primeiroQuadro h3 {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 7px;
+    margin-top: 2%;
+  }
+  
+  
+ 
+
+  /* Footer */
+  
+  footer {
+    text-align: center;
+    height: 350px;
+    background-color: rgb(187, 239, 248);
+    padding-top: 5%;
+    
+  }
+  
+  .contato {
+    background-color: white; 
+  }
+  
+  
+  
+  .email {
+    color: #8aacc8;
+    font-weight: bold;
+  }
+  
+  
