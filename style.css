@@ -154,6 +154,66 @@ body {
     color: black;
     font-size: 2.5rem;
   }
+
+
+
+  /* GAME INDIVIDUAL */
   
 
+  .gameIndividual {
+    margin-left: 38%;
+    color: black;
+    font-size: 2.5rem;
+  }
+
+  .primeiroQuadroGameIndividual {
+    padding: 5% 5% 5% 5%;
+    background-color: #9bcbf8;
+  }
+
+ 
+
+  .avaliacao {
+    list-style: none;
+    text-align: center;
+    padding: 1%;
+    background-color: aliceblue;
+  }
   
+
+  /* Recomendações */
+
+
+  .recomendacoes {
+    color: black;
+    font-size: 2.5rem;
+  }
+
+  .primeiroQuadroRecomendacoes {
+    padding: 5% 5% 5% 5%;
+    background-color: #9bcbf8;
+  }
+
+  .recomendacoes h3 {
+    text-align: center;
+    color: black;
+    padding: 1% 1%;
+  }
+
+
+  /* Busca */
+
+  .primeiroQuadroBusca {
+    padding: 5% 5% 5% 5%;
+    background-color: #9bcbf8;
+  }
+
+  .formulario {
+    margin-left: 30%;
+  }
+
+  input {
+    width: 60%;
+    height: 60px;
+    border-radius: 4px;
+  }
