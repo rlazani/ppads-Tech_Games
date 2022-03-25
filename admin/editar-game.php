@@ -6,7 +6,7 @@ require '../src/redireciona.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $game = new Game($mysql);
-    $game->editar($_POST['id'], $_POST['titulo'], $_POST['url']);
+    $game->editar($_POST['id'], $_POST['titulo'], $_POST['tipo'], $_POST['resumo'], $_POST['url']);
 
     redireciona('/browserGames/admin/index.php');
 }
@@ -35,8 +35,16 @@ $gam = $game->encontrarPorId($_GET['id']);
                 <input class="campo-form" type="text" name="titulo" id="titulo" value="<?php echo $gam['titulo']; ?>" />
             </p>
             <p>
+                <label for="url">Digite o novo tipo do game</label>
+                <textarea class="campo-form" type="text" name="tipo" id="tipo"><?php echo $gam['tipo']; ?></textarea>
+            </p>
+            <p>
+                <label for="url">Digite o novo resumo do game</label>
+                <textarea class="campo-form" type="text" name="resumo" id="resumo"><?php echo $gam['resumo']; ?></textarea>
+            </p>
+            <p>
                 <label for="url">Digite o novo url do artigo</label>
-                <textarea class="campo-form" type="text" name="url" id="titulo"><?php echo $gam['url']; ?></textarea>
+                <textarea class="campo-form" type="text" name="url" id="url"><?php echo $gam['url']; ?></textarea>
             </p>
             <p>
                 <input type="hidden" name="id" value="<?php echo $gam['id']; ?>" />

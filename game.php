@@ -21,11 +21,22 @@ $game = $obj_game->encontrarPorId($_GET['id']);
         <h1>
             <?php echo $game['titulo']; ?>
         </h1>
+        <br>
         <p>
-            <?php echo $game['url']; ?>
+            Tipo: <?php echo $game['tipo']; ?>
         </p>
+        <br>
+        <p>
+            Resumo: <?php echo $game['resumo']; ?>   
+        </p>
+        <br> 
+        <p>
+            Url: <?php echo $game['url']; ?>
+            <br>
+        </p>
+        <br>
         <div>
-            <a class="botao botao-block" href="index.php">Voltar</a>
+            <a class="botao botao-block" href="admin/index.php">Voltar</a>
         </div>
     </div>
 </body>

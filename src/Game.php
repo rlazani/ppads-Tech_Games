@@ -17,10 +17,10 @@ class Game
         $removerGame->execute();
     }
 
-    public function adicionar(string $titulo, string $tipo): void
+    public function adicionar(string $titulo, string $tipo, string $resumo, string $url): void
     {
-        $insereGame = $this->mysql->prepare('INSERT INTO games (titulo, tipo) VALUES(?,?);');
-        $insereGame->bind_param('ss', $titulo, $tipo);
+        $insereGame = $this->mysql->prepare('INSERT INTO games (titulo, tipo, resumo, url) VALUES(?,?,?,?);');
+        $insereGame->bind_param('ssss', $titulo, $tipo, $resumo, $url);
         $insereGame->execute();
     }
 
@@ -42,10 +42,10 @@ class Game
         return $game;
     }
 
-    public function editar(string $id, string $titulo, string $url): void
+    public function editar(string $id, string $titulo, string $tipo, string $resumo, string $url): void
     {
-        $editaGame = $this->mysql->prepare('UPDATE games SET titulo = ?, url = ? WHERE id = ?');
-        $editaGame->bind_param('sss', $titulo, $url, $id);
+        $editaGame = $this->mysql->prepare('UPDATE games SET titulo = ?, tipo = ?, resumo = ?, url = ? WHERE id = ?');
+        $editaGame->bind_param('sssss', $titulo, $tipo, $resumo, $url, $id);
         $editaGame->execute();
     }
 
