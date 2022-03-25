@@ -21,7 +21,9 @@ $games = $game->exibirTodos();
 
 <body>
     <div id="container">
-        <h1>Games Cadastrados</h1>
+        <h1>Good Browser Games</h1>
+        <h2>Games Cadastrados</h2>
+            </br>
             <?php foreach ($games as $game) : ?>
             <h2>
             <a href="game.php?id=<?php echo $game['id']; ?>">
@@ -31,6 +33,7 @@ $games = $game->exibirTodos();
             <p>
                 <?php echo $game['url']; ?>
             </p>
+            </br>
             <?php endforeach; ?>
     </div>
 </body>
