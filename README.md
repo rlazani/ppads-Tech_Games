@@ -20,13 +20,12 @@ Após extraído, o arquivo zip da tag v2 terá o nome de <ppads-Tech_Games-2.0>.
 Para iniciar o servidor Apache e o banco de dados, abrir o XAMPP Control Panel e clicar nos botões Start referentes ao módulo Apache e MySQL. Os nomes Apache e MySQL devem ficar verdes e os números dos Ports devem aparecer. 
 
 4- Criação do banco de dados:
-O banco de dados da aplicação pode ser acessado via browser no endereço localhost/phpmyadmin. Depois, clicar na aba MySQl para inserir os comandos abaixo de criação SQL.  
+O banco de dados da aplicação pode ser acessado via browser no endereço localhost/phpmyadmin. Depois, clicar na aba MySQl para inserir os comandos SQL abaixo de criação do banco de dados e tables.  
 
 
+CREATE DATABASE browsergames; 
 
-
-
-
+USE browsergames; 
 
 
 CREATE TABLE users ( 
@@ -49,9 +48,6 @@ bio TEXT
 
 ); 
 
- 
-
- 
 
 CREATE TABLE movies ( 
 
@@ -75,9 +71,6 @@ FOREIGN KEY(users_id) REFERENCES  users(id)
 
 ); 
 
- 
-
- 
 
 CREATE TABLE reviews( 
 
@@ -95,9 +88,7 @@ FOREIGN KEY (movies_id) REFERENCES movies(id)
 
 ); 
 
- 
 
- 
 
 5- Acessando o aplicativo:
 O aplicativo pode ser acessado via browser no endereço localhost/ppads-Tech_Games-2.0. Depois de acessado, é possível criar uma conta de membro clicando no link Login/Cadastro e uma conta de administrador no botão Admin. Ambos os links estão localizados na menu superior. Após a criação das contas, é possível realizar as operações de membro ou de administrador conforme a documentação do projeto. 
