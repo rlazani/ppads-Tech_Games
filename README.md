@@ -16,11 +16,12 @@ Esse software foi desenvolvido localmente utilizando o pacote "XAMPP", que cont�
 2 - Pasta hotdocs:
 Após extraído, o arquivo zip da tag v2 terá o nome de <ppads-Tech_Games-2.0>. Essa pasta deve ser copiada dentro da pasta xampp/hotdocs
 
+
 3 - Inicialização do Apache e MySQL:
 Para iniciar o servidor Apache e o banco de dados, abrir o XAMPP Control Panel e clicar nos botões Start referentes ao módulo Apache e MySQL. Os nomes Apache e MySQL devem ficar verdes e os números dos Ports devem aparecer. 
 
 4- Criação do banco de dados:
-O banco de dados da aplicação pode ser acessado via browser no endereço localhost/phpmyadmin. Depois, clicar na aba MySQl para inserir os comandos SQL abaixo de criação do banco de dados e tables.  
+O banco de dados da aplicação pode ser acessado via browser no endereço localhost/phpmyadmin. Depois, clicar na aba MySQl para inserir os comandos SQL abaixo de criação do banco de dados e tables. Algumas colunas não estão sendo utilizadas no projeto e serão cortadas e/ou renomeadas na próxima versão. 
 
 
 CREATE DATABASE browsergames; 
@@ -112,4 +113,6 @@ FOREIGN KEY (movies_id) REFERENCES movies(id)
 
 
 5- Acessando o aplicativo:
-O aplicativo pode ser acessado via browser no endereço localhost/ppads-Tech_Games-2.0. Depois de acessado, é possível criar uma conta de membro clicando no link Login/Cadastro e uma conta de administrador no botão Admin. Ambos os links estão localizados na menu superior. Após a criação das contas, é possível realizar as operações de membro ou de administrador conforme a documentação do projeto. 
+O aplicativo pode ser acessado via browser no endereço localhost/ppads-Tech_Games-2.0. Depois de acessado, é possível criar uma conta de membro clicando no link Login/Cadastro e uma conta de administrador no botão Admin. Ambos os links estão localizados na menu superior. Após a criação das contas, é possível realizar as operações de membro ou de administrador conforme a documentação do projeto. A criação de conta do Administrador foi necessária pois o banco de dados estará vazio, então será necessário criar um administrador localmente, mas quando o aplicativo estiver online, essa funcionalidade será excluída. 
+
+Obs: No final do relatório de documentação foram colocadas algumas imagens das instruções e algumas telas do aplicativo. 
