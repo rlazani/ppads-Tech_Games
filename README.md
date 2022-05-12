@@ -8,10 +8,23 @@ O sistema atual encontra-se no branch iteração 2.
 
 ##############
 
+
+LISTA COM REQUISITOS DE HARDWARE / SOFTWARE:
+
+Sistema Operacional Windows, Linux, ou Macintosh
+
+Pacote de desenvolvimento XAMPP compatível com o sistema operacional. Esse pacote contém todas as dependências para o desenvolvimento PHP em um computador pessoal: Servidor Apache, Banco de Dados MariaDB, PHP.
+
+Browser Chorme, Firefox ou Edge. 
+
+
+##############
+
+
 INSTRUÇÕES PARA EXECUÇÃO EM COMPUTADOR PESSOAL:
 
 1 - Pacote XAMPP: 
-Esse software foi desenvolvido localmente utilizando o pacote "XAMPP", que contém MySQL e Apache e todas as dependências necessárias para o desenvolvimento de uma aplicação web em PHP. Esse pacote deve ser baixado no endereço eletrônico https://www.apachefriends.org/pt_br/index.html.
+Esse software foi desenvolvido localmente utilizando o pacote "XAMPP", que contém MySQL e Apache e todas as dependências necessárias para o desenvolvimento de uma aplicação web em PHP. Esse pacote deve ser baixado no endereço eletrônico https://www.apachefriends.org/pt_br/index.html
 
 2 - Pasta hotdocs:
 Após extraído, o arquivo zip da tag v2 terá o nome de <ppads-Tech_Games-2.0>. Essa pasta deve ser copiada dentro da pasta xampp/hotdocs
@@ -115,4 +128,4 @@ FOREIGN KEY (movies_id) REFERENCES movies(id)
 5- Acessando o aplicativo:
 O aplicativo pode ser acessado via browser no endereço localhost/ppads-Tech_Games-2.0. Depois de acessado, é possível criar uma conta de membro clicando no link Login/Cadastro e uma conta de administrador no botão Admin. Ambos os links estão localizados na menu superior. Após a criação das contas, é possível realizar as operações de membro ou de administrador conforme a documentação do projeto. A criação de conta do Administrador foi necessária pois o banco de dados estará vazio, então será necessário criar um administrador localmente, mas quando o aplicativo estiver online, essa funcionalidade será excluída. 
 
-Obs: No final do relatório de documentação foram colocadas algumas imagens das instruções e algumas telas do aplicativo. 
+Obs: No documento de especificação foram colocadas algumas imagens das instruções e algumas telas do aplicativo. 
