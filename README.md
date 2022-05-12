@@ -86,7 +86,7 @@ bio TEXT
 
 CREATE TABLE movies ( 
 
-Id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
 
 title VARCHAR(100),  
 
@@ -109,13 +109,15 @@ FOREIGN KEY(users_id) REFERENCES  users(id)
 
 CREATE TABLE reviews( 
 
-Id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
 
-Rating INT,  
+rating INT,  
 
-Review TEXT,  
+review TEXT,  
 
-Users_id INT(11) UNSIGNED,  
+users_id INT(11) UNSIGNED,  
+
+movies_id INT(11) UNSIGNED,
 
 FOREIGN KEY (users_id) REFERENCES users(id),  
 
